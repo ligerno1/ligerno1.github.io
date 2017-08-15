@@ -41,8 +41,9 @@
 							<span class="say">希望大家锺意</span><br>
 							<span class="say"> </span><br>
 							<span class="say">不求最好，只求更好！</span><br>
-							<span class="say"><a href="/responsive/index.html" class="mywork01">我的作品——响应式页面</a></span><br>
-							<div id="mywork01" style="position:absolute;left:200px;top:0px;overflow:auto;overflow-x:hidden;height:300px;height:470px"><img src="/responsive/indexpic.png" width="300" height="1200"/></div>	
+							<span class="say"><a href="/responsive/index.html" >我的作品——响应式页面</a></span><br>
+							<span class="say"><button class="mywork01">显示</button></span><br>
+							<div id="mywork01" style="display:none;position:absolute;left:200px;top:0px;overflow:auto;overflow-x:hidden;height:300px;height:470px"><img src="/responsive/indexpic.png" width="300" height="1200"/></div>	
 							<span class="say"><a href="#">我的作品2</a></span><br>
 							<span class="say"><a href="#">我的作品3</a></span><br>
 							
@@ -222,6 +223,18 @@
 				}));
 
 				runAsync().start();
+				
+				$('.mywork01').click(function(){
+					if($(this).text() == '显示'){
+						$(this).text('隐藏')
+						$('#mywork01').show();
+					}else{
+						$(this).text('显示')
+						$('#mywork01').hide();
+					}
+					
+				})
+				
 			})();
 		</script>
 	</body>
