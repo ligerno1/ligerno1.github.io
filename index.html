@@ -225,11 +225,11 @@
 				runAsync().start();
 				
 				$('.mywork01').click(function(){
-					if($(this).text() == '显示'){
-						$(this).text('隐藏')
+					if($(this).val() == '显示'){
+						$(this).val('隐藏')
 						$('#mywork01').show();
 					}else{
-						$(this).text('显示')
+						$(this).val('显示')
 						$('#mywork01').hide();
 					}
 					
