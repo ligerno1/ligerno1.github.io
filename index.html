@@ -20,6 +20,23 @@
 			}
 			
 			-->
+			h2{
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: 50px;
+				text-align: center;
+				color: #5BC0DE;
+				background: #f0f0f0;
+				line-height: 50px;
+			}
+			img{
+				margin: 0;
+				padding: 0;
+			}
+			#mywork01{
+				border: 1px solid #F5F5F5;
+			}
 		</style>
 	</head>
 
@@ -41,14 +58,15 @@
 							<span class="say">希望大家锺意</span><br>
 							<span class="say"> </span><br>
 							<span class="say">不求最好，只求更好！</span><br>
-							<span class="say"><a href="/responsive/index.html">我的作品——响应式页面</a></span><br>
-
+							<span class="say"><a href="/responsive/index.html" >我的作品——响应式页面</a></span><br>
+							<span class="say"></span><br>
+							<div id="mywork01" style="display:block;position:absolute;left:577px;top:12px;overflow:auto;overflow-x:hidden;height:300px;height:370px"><h2>响应式页面</h2><img src="responsive/indexpic.png" width="300" height="1200"/><img src="responsive/indexpic.png" width="300" height="1200"/></div>	
 							<span class="say"><a href="#">我的作品2</a></span><br>
 							<span class="say"><a href="#">我的作品3</a></span><br>
 							
 							<span class="say"><span class="space"></span> -- 想成为大牛的李杰--</span>
 						</font>
-						</p>
+						
 					</div>
 				</div>
 				<div id="clock-box">
@@ -220,8 +238,9 @@
 
 					$await(jumpAnimate());
 				}));
-
+				
 				runAsync().start();
+				
 			})();
 		</script>
 	</body>
